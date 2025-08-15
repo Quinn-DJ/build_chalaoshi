@@ -3,5 +3,3 @@ logs/
 web/
 .DS_Store
 .vscode
-
-!web/README.md
