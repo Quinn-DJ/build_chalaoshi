@@ -27,10 +27,13 @@ passwords:
     "chalaoshi_csv20250502_5399305_2696_26893D_sha256.zip": 
       - type: "raw"
         content: "切勿交浅言深。不要干涉他人因果。牢记八个字：关我屁事。关你屁事。"
+    "chalaoshi_csv20260630_5399305_3164_3A9309_sha256.zip":
+      - type: "raw"
+        content: "唉走着走着就散了"
 
 # 解压任务列表
 extract_tasks:
-  - archive_path: "comment/chalaoshi_csv20250502_5399305_2696_26893D_sha256.zip"
+  - archive_path: "comment/chalaoshi_csv20260630_5399305_3164_3A9309_sha256.zip"
     extract_dir: "comment/extracted"
     password: ""  # 如果为空，将尝试配置中的密码列表
 

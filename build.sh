@@ -70,22 +70,11 @@ install_dependencies() {
 download_archive() {
     show_progress "下载数据压缩包"
     
-    # 检查是否已经存在压缩包
-    ARCHIVE_FILE="comment/chalaoshi_csv20250502_5399305_2696_26893D_sha256.zip"
-    if [ -f "$ARCHIVE_FILE" ]; then
-        echo "✅ 压缩包已存在: $ARCHIVE_FILE"
-        return 0
-    fi
-    
     echo "📥 开始下载压缩包..."
     python3 src/file_downloader.py --from-config
     
     if [ $? -ne 0 ]; then
         handle_error "压缩包下载失败"
-    fi
-    
-    if [ ! -f "$ARCHIVE_FILE" ]; then
-        handle_error "下载完成但找不到压缩包文件"
     fi
     
     echo "✅ 压缩包下载完成: $ARCHIVE_FILE"
