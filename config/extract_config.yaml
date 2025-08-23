@@ -7,7 +7,7 @@ extract:
   keep_archive: true
   
   # 是否覆盖已存在的文件
-  overwrite_existing: false
+  overwrite_existing: true
   
   # 支持的压缩文件类型
   supported_formats:
